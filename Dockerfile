@@ -1,6 +1,6 @@
 FROM harbor.kezhitech.com/k8sbuild/hellocat:basis AS build
 ADD . /code
-RUN mvn clean package -f /code -Dmaven.test.skip=true -Dmaven.repo.local=/root/.m2
+RUN mvn clean package -o -f /code -Dmaven.test.skip=true -Dmaven.repo.local=/root/.m2/repository
 
 FROM openjdk:8-jre-alpine
 ADD http://dl.kezhitech.com/k8s/client.xml /data/appdatas/cat/client.xml
