@@ -1,0 +1,4 @@
+include:
+- project: devops/gitops
+  ref: main
+  file: /ci-templates/java.yml
