@@ -14,15 +14,10 @@ public class HellocatApplication {
 	public String health() {
 		return String.format("ok");
 	}
-	
-	@GetMapping("/test")
-	public String test() {
-		return String.format("test");
-	}
-	
-	@GetMapping("/admin")
-	public String admin() {
-		return String.format("admin");
+
+	@GetMapping("/hellocat")
+	public String hellocat() {
+		return String.format("hellocat")
 	}
 
 	public static void main(String[] args) {
