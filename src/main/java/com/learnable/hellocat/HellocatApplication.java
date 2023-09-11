@@ -19,6 +19,11 @@ public class HellocatApplication {
 	public String test() {
 		return String.format("test");
 	}
+	
+	@GetMapping("/admin")
+	public String admin() {
+		return String.format("admim");
+	}
 
 	public static void main(String[] args) {
 		SpringApplication.run(HellocatApplication.class, args);
