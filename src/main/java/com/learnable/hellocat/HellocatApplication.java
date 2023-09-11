@@ -22,7 +22,7 @@ public class HellocatApplication {
 	
 	@GetMapping("/admin")
 	public String admin() {
-		return String.format("admim");
+		return String.format("admin");
 	}
 
 	public static void main(String[] args) {
