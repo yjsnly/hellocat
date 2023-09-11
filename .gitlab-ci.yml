@@ -1,5 +1,5 @@
 variables:
-  module: com.learnable.hellocat
+  module: .
 
 include:
 - project: devops/gitops
