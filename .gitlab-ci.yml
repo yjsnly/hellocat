@@ -1,3 +1,6 @@
+variables:
+  module: hellocat
+
 include:
 - project: devops/gitops
   ref: main
