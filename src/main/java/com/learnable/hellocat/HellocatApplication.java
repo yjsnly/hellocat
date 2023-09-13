@@ -16,8 +16,8 @@ public class HellocatApplication {
 	}
 
 	@GetMapping("/hello")
-	public String hello() {
-		return String.format("cat");
+	public String hello(@RequestParam(value = "name", defaultValue = "World") String name) {
+		return String.format("Hello %s!", name);
 	}
 
 	public static void main(String[] args) {
