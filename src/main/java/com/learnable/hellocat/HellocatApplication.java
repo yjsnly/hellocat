@@ -16,7 +16,7 @@ public class HellocatApplication {
 	}
 
 	@GetMapping("/hello")
-	public String hellocat() {
+	public String hello() {
 		return String.format("cat");
 	}
 
