@@ -1,3 +1,7 @@
-build:
-  script:
-    - echo "hello world"
+variables:
+  module: .
+
+include:
+- project: devops/gitops
+  ref: main
+  file: /ci-templates/java.yml

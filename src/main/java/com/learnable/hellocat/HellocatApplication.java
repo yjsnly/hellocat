@@ -10,9 +10,19 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class HellocatApplication {
 
+	@GetMapping("/health")
+	public String health() {
+		return String.format("ok");
+	}
+
 	@GetMapping("/hello")
-	public String hello(@RequestParam(value = "name", defaultValue = "World") String name) {
-		return String.format("Hello %s!", name);
+	public String hello() {
+		return String.format("cat");
+	}
+
+	@GetMapping("/world")
+	public String world() {
+		return String.format("cat");
 	}
 
 	public static void main(String[] args) {
