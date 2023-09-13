@@ -17,12 +17,7 @@ public class HellocatApplication {
 
 	@GetMapping("/hello")
 	public String hello() {
-		return String.format("cat");
-	}
-
-	@GetMapping("/world")
-	public String world() {
-		return String.format("cat");
+		return String.format("world");
 	}
 
 	public static void main(String[] args) {
