@@ -15,11 +15,6 @@ public class HellocatApplication {
 		return String.format("ok");
 	}
 
-	@GetMapping("/hello")
-	public String hello() {
-		return String.format("Hello World!");
-	}
-
 	public static void main(String[] args) {
 		SpringApplication.run(HellocatApplication.class, args);
 	}
