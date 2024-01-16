@@ -36,6 +36,11 @@ public class HellocatApplication {
 		return String.format("auth");
 	}
 
+	@GetMapping("/cat")
+	public String cat() {
+		return String.format("cat");
+	}
+
 	public static void main(String[] args) {
 		SpringApplication.run(HellocatApplication.class, args);
 	}
