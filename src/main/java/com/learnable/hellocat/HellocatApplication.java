@@ -30,6 +30,12 @@ public class HellocatApplication {
 		return String.format("metrics");
 	}
 
+		
+	@GetMapping("/auth")
+	public String auth() {
+		return String.format("auth");
+	}
+
 	public static void main(String[] args) {
 		SpringApplication.run(HellocatApplication.class, args);
 	}
