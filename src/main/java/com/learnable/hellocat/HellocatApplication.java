@@ -24,6 +24,11 @@ public class HellocatApplication {
 	public String user() {
 		return String.format("user");
 	}
+	
+	@GetMapping("/metrics")
+	public String metrics() {
+		return String.format("metrics");
+	}
 
 	public static void main(String[] args) {
 		SpringApplication.run(HellocatApplication.class, args);
